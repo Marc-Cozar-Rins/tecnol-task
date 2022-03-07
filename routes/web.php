@@ -1,6 +1,10 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\HomeController;
+use App\Http\Controllers\Front\ProductController;
+use App\Http\Controllers\Front\ReviewController;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -13,10 +17,18 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+Route::get('/', [HomeController::class,'index'])->name('front.home');
+
+Route::prefix('/products')->group(function () {
+
+    Route::get('/', [ProductController::class,'index'])->name('front.products');
+    Route::get('/{product}', [ProductController::class,'show'])->name('front.products.show');
 });
 
-Auth::routes();
+Route::middleware(['auth'])->group(function () {
+    Route::post('/products/{product}/review', [ReviewController::class,'store'])->name('front.reviews.store');
 
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+});
+
+
+Auth::routes();
