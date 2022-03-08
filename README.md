@@ -45,6 +45,8 @@ cozar.rins.marc@gmail.com
 ```
     /products -> retorna els productes que estan actius
     /products/{id} -> retorna la fitxa del producte i mostra les reviews (si no tens el login, no pots fer una review)
+    /api/category/{category} -> api que retorna els productes i les seves reviews associades donat el id d'una categoria
+    /user/review/{review} -> api que retorna el nom de l'usuari d'una review donat el id de la review.
     /login -> Formulari d'inici de sessió
     /register -> Formulari de registre
     /password/reset -> Formulari per restablir la contrasenya
