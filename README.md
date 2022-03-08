@@ -2,12 +2,11 @@
  
 
 ## Descripció
-És una aplicació senzilla que permet crear categoríes, productes i reviews.
-També, estàn configurades dues apis. 
-Una et retorna els productes i les seves revies associades donat el id d'una categoria i l'altre et retorna el nom del usuari d'una review donat el id de la review.
+És una aplicació senzilla que permet crear categories, productes i reviews.
+També, estan configurades dos apis. 
+Una et retorna els productes i les seves reviews associades donat el id d'una categoria i l'altre et retorna el nom de l'usuari d'una review donat el id de la review.
 
-## Dependencies
-
+## Dependències
 - Composer
 - Versió mínima PHP 8.0
 - Base de dades
@@ -15,6 +14,7 @@ Una et retorna els productes i les seves revies associades donat el id d'una cat
 ## Instal·lació del projecte
 
 - Descarregar el zip del projecte
+- https://github.com/Marc-Cozar-Rins/tecnol-task.git
 - Descomprimir el projecte
 - Obrir un terminal i fer cd fins arribar a la carpeta on l'has descomprimit
 - Executar les comandes
@@ -42,7 +42,7 @@ cozar.rins.marc@gmail.com
 ## Rutes
 **FRONTOFFICE**
 ```
-    /products -> retorna els productes que estàn actius
+    /products -> retorna els productes que estan actius
     /login -> Formulari d'inici de sessió
     /register -> Formulari de registre
     /password/reset -> Formulari per restablir la contrasenya
