@@ -52,7 +52,7 @@ cozar.rins.marc@gmail.com
     /password/reset -> Formulari per restablir la contrasenya
  ```
 
-**BACKOFFICE** Tan sols pot accedir el user amb el rol_id = 1 (tecnol@test.com)
+**BACKOFFICE** Tan sols pot accedir el user amb el rol_id = 1 (tecnol@test.com - contrasenya: test123)
  ```
     /back/products -> Panell de gestió productes (editar - eliminar - afegir)
     /back/categories -> Panell de gestió categories (editar - eliminar - afegir)
